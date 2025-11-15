@@ -197,7 +197,7 @@ function renderVideos() {
         <div class="video-card fade-in">
             <div class="video-embed">
                 <iframe
-                    src="https://www.youtube.com/embed/${video.id}"
+                    src="https://www.youtube-nocookie.com/embed/${video.id}"
                     title="${video.title[currentLang]}"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
