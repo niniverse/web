@@ -80,23 +80,23 @@ const translations = {
     }
 };
 
-// Portfolio items data
+// Portfolio items data with images
 const portfolioItems = {
     en: [
-        { id: 1, title: "Metvitoni", category: "featured", description: "Conscious business culture — building brands that think with intention and act with humanity" },
-        { id: 2, title: "Creative Education", category: "gifts", description: "Teaching vision and thought — developing individuals who create consciously and perceive beauty as a form of thinking" },
-        { id: 3, title: "Visual Strategy Studio", category: "custom", description: "Brand strategy and narrative development — transforming ideas into living identities through form, environment, and emotional atmosphere" },
-        { id: 4, title: "Vision Community", category: "featured", description: "A space for vision creators — uniting people who create consciously and live aesthetically" },
-        { id: 5, title: "Brand Vision Development", category: "custom", description: "From idea to living identity — creating systems where meaning and aesthetics build conscious culture" },
-        { id: 6, title: "Global Culture Initiative", category: "featured", description: "Positioning Georgia as a space where visual thinking, intellect, and creativity converge with contemporary global culture" }
+        { id: 1, title: "Metvitoni", category: "featured", description: "Conscious business culture — building brands that think with intention and act with humanity", image: "assets/artisan_workspace_ha_16dc79c5-C67wu2vn.webp" },
+        { id: 2, title: "Creative Education", category: "gifts", description: "Teaching vision and thought — developing individuals who create consciously and perceive beauty as a form of thinking", image: "assets/handmade_bespoke_gif_b3f3ebb4-DzJtMeKB.webp" },
+        { id: 3, title: "Visual Strategy Studio", category: "custom", description: "Brand strategy and narrative development — transforming ideas into living identities through form, environment, and emotional atmosphere", image: "assets/handmade_bespoke_gif_5754d7b7-C4WGR8FD.webp" },
+        { id: 4, title: "Vision Community", category: "featured", description: "A space for vision creators — uniting people who create consciously and live aesthetically", image: "assets/handmade_bespoke_gif_bba9cc82-DinnBfKh.webp" },
+        { id: 5, title: "Brand Vision Development", category: "custom", description: "From idea to living identity — creating systems where meaning and aesthetics build conscious culture", image: "assets/handmade_bespoke_gif_9307335b-DcuyosYH.webp" },
+        { id: 6, title: "Global Culture Initiative", category: "featured", description: "Positioning Georgia as a space where visual thinking, intellect, and creativity converge with contemporary global culture", image: "assets/unnamed_1760549168809-rH9TRteu.webp" }
     ],
     ka: [
-        { id: 1, title: "ვიზუალური სტრატეგიის მასტერკლასი", category: "gifts", description: "ყოვლისმომცველი კურსი ვიზუალურ მთხრობასა და კონტენტის შექმნაზე მომავალი შემქმნელებისთვის" },
-        { id: 2, title: "ბრენდის ფოტოგრაფიის სერია", category: "custom", description: "ავთენტური ვიზუალური მთხრობა ქართული ხელოსნური ბრენდებისთვის" },
-        { id: 3, title: "შემოქმედებითი მოგზაურობის დოკუმენტური", category: "featured", description: "კულისებს მიღმა ხედვა შემოქმედებითი კარიერის აშენებაზე განზრახულად და ავთენტურობით" },
-        { id: 4, title: "კომპოზიციისა და განათების სემინარი", category: "gifts", description: "პრაქტიკული განათლება ესთეტიკურად მნიშვნელოვანი ვიზუალური კონტენტის შესაქმნელად" },
-        { id: 5, title: "კონტენტ შემქმნელთან თანამშრომლობა", category: "custom", description: "სტრატეგიული პარტნიორობა ქართული მემკვიდრეობის აღნიშვნისთვის თანამედროვე ვიზუალური მთხრობით" },
-        { id: 6, title: "სტუდენტების წარმატების ისტორიები", category: "featured", description: "მასტერკლასების მონაწილეთა შემოქმედებითი ზრდისა და მიღწევების წარმოჩენა" }
+        { id: 1, title: "ვიზუალური სტრატეგიის მასტერკლასი", category: "gifts", description: "ყოვლისმომცველი კურსი ვიზუალურ მთხრობასა და კონტენტის შექმნაზე მომავალი შემქმნელებისთვის", image: "assets/handmade_bespoke_gif_b3f3ebb4-DzJtMeKB.webp" },
+        { id: 2, title: "ბრენდის ფოტოგრაფიის სერია", category: "custom", description: "ავთენტური ვიზუალური მთხრობა ქართული ხელოსნური ბრენდებისთვის", image: "assets/handmade_bespoke_gif_5754d7b7-C4WGR8FD.webp" },
+        { id: 3, title: "შემოქმედებითი მოგზაურობის დოკუმენტური", category: "featured", description: "კულისებს მიღმა ხედვა შემოქმედებითი კარიერის აშენებაზე განზრახულად და ავთენტურობით", image: "assets/artisan_workspace_ha_16dc79c5-C67wu2vn.webp" },
+        { id: 4, title: "კომპოზიციისა და განათების სემინარი", category: "gifts", description: "პრაქტიკული განათლება ესთეტიკურად მნიშვნელოვანი ვიზუალური კონტენტის შესაქმნელად", image: "assets/handmade_bespoke_gif_bba9cc82-DinnBfKh.webp" },
+        { id: 5, title: "კონტენტ შემქმნელთან თანამშრომლობა", category: "custom", description: "სტრატეგიული პარტნიორობა ქართული მემკვიდრეობის აღნიშვნისთვის თანამედროვე ვიზუალური მთხრობით", image: "assets/handmade_bespoke_gif_9307335b-DcuyosYH.webp" },
+        { id: 6, title: "სტუდენტების წარმატების ისტორიები", category: "featured", description: "მასტერკლასების მონაწილეთა შემოქმედებითი ზრდისა და მიღწევების წარმოჩენა", image: "assets/unnamed_1760549168809-rH9TRteu.webp" }
     ]
 };
 
@@ -225,8 +225,13 @@ function renderPortfolio() {
 
     container.innerHTML = items.map(item => `
         <div class="portfolio-item fade-in" data-category="${item.category}">
-            <h3>${item.title}</h3>
-            <p>${item.description}</p>
+            <div class="portfolio-image">
+                <img src="${item.image}" alt="${item.title}" loading="lazy">
+            </div>
+            <div class="portfolio-content">
+                <h3>${item.title}</h3>
+                <p>${item.description}</p>
+            </div>
         </div>
     `).join('');
 

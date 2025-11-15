@@ -5,7 +5,8 @@
       "Bash(npm update)",
       "Bash(npm run build:github:*)",
       "Bash(npm install:*)",
-      "Bash(npm run deploy:*)"
+      "Bash(npm run deploy:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
