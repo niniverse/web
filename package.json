@@ -1,0 +1,26 @@
+{
+  "name": "niniverse-web",
+  "version": "1.0.0",
+  "description": "Niniverse - Simple vanilla JavaScript portfolio site. No dependencies, no build step.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niniverse/web.git"
+  },
+  "homepage": "https://niniverse.github.io/web",
+  "author": "Nini Chaladze",
+  "scripts": {
+    "dev": "echo 'Opening local server...' && cd docs && python -m http.server 8000",
+    "preview": "cd docs && python -m http.server 8000",
+    "deploy": "echo '\n✨ Simple Deployment:\n1. git add .\n2. git commit -m \"Update site\"\n3. git push origin main\n\nNo build step needed! Files in /docs are ready to go.\n' && git status --short docs/"
+  },
+  "keywords": [
+    "portfolio",
+    "vanilla-js",
+    "static-site",
+    "bilingual",
+    "niniverse",
+    "no-build"
+  ]
+}

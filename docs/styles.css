@@ -1,0 +1,576 @@
+/* ========================================
+   CSS Variables - Niniverse Brand Colors
+   ======================================== */
+:root {
+    /* Light Theme Colors */
+    --bg-primary: #FAF9F6;
+    --bg-secondary: #F5F2ED;
+    --bg-card: #FFFFFF;
+
+    --text-primary: #3D3027;
+    --text-secondary: #6B5D50;
+    --text-muted: #8B7D6F;
+
+    --color-primary: #D47855;      /* Terracotta/Cappuccino */
+    --color-accent: #8B6F47;       /* Coffee Brown */
+    --color-secondary: #E8DED0;    /* Creamy Beige */
+
+    --border-color: #E0D8CC;
+    --shadow: 0 2px 8px rgba(61, 48, 39, 0.08);
+    --shadow-lg: 0 4px 16px rgba(61, 48, 39, 0.12);
+
+    /* Typography */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
+
+    /* Transitions */
+    --transition: all 0.3s ease;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --bg-primary: #1A1612;
+    --bg-secondary: #252018;
+    --bg-card: #2D2520;
+
+    --text-primary: #F5F2ED;
+    --text-secondary: #D0C4B5;
+    --text-muted: #9A8D7E;
+
+    --color-primary: #E89574;
+    --color-accent: #A58860;
+    --color-secondary: #3D3027;
+
+    --border-color: #3D3027;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.75rem; }
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+/* ========================================
+   Navigation
+   ======================================== */
+.navbar {
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.nav-links a:hover {
+    background: var(--bg-secondary);
+}
+
+.controls {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: center;
+}
+
+.icon-btn, .lang-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+}
+
+.icon-btn:hover, .lang-btn:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.hero-name {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-tagline {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-intro {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-md);
+    color: var(--text-primary);
+    font-weight: 300;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.cta-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 120, 85, 0.3);
+}
+
+/* ========================================
+   Sections
+   ======================================== */
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+.bg-alt {
+    background: var(--bg-secondary);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* ========================================
+   About Section
+   ======================================== */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    white-space: pre-line;
+}
+
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: var(--spacing-md);
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card h3 {
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+}
+
+.manifesto {
+    background: var(--color-secondary);
+    padding: var(--spacing-md);
+    border-left: 4px solid var(--color-primary);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: var(--spacing-lg);
+}
+
+/* ========================================
+   Portfolio Section
+   ======================================== */
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.portfolio-item {
+    background: var(--bg-card);
+    padding: var(--spacing-md);
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.portfolio-item h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.portfolio-item p {
+    color: var(--text-secondary);
+}
+
+.portfolio-item.hidden {
+    display: none;
+}
+
+/* ========================================
+   Videos Section
+   ======================================== */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.video-card {
+    background: var(--bg-card);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    padding: var(--spacing-md);
+}
+
+.video-info h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.25rem;
+}
+
+.video-info p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ========================================
+   Contact Section
+   ======================================== */
+.contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(212, 120, 85, 0.1);
+}
+
+.submit-btn {
+    background: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: 0.75rem;
+    background: var(--bg-card);
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background: var(--color-secondary);
+    transform: translateX(4px);
+}
+
+.location {
+    margin-top: var(--spacing-sm);
+    color: var(--text-muted);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer {
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.footer-tagline {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.copyright {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+
+    .hero-name { font-size: 2.5rem; }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+.hidden {
+    display: none !important;
+}
+
+/* Smooth Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}

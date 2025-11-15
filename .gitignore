@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+.cache/
+tmp/
+temp/
+
+# Legacy - old React build artifacts (not used anymore)
+node_modules/
+package-lock.json
+dist/
+*.local
+
+# Legacy - old source files (keeping for reference)
+# The actual site is now in /docs (vanilla HTML/CSS/JS)
+src/
+.replit
+.vs/
